@@ -56,7 +56,7 @@ res.end(`Hello ${name}, you have ${count} documents` );
 server.listen(port, hostname, () => {
 console.log(`Server running at http://${hostname}:${port}/`);
 });
-• А также на выбор используемой коллекции документов
+//А также на выбор используемой коллекции документов
 const collection = db.collection("users");
 count = await collection.countDocuments();
 console.log(`В коллекции users ${count} документа/ов`);
